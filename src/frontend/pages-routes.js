@@ -4,19 +4,23 @@ const router = express.Router();
 /* GET home page. */
 
 router.get('/', (req, res, next) => {
-    res.render('index');
+	res.render('index');
 });
 
-router.get('/sukces',  (req, res, next) => {
-    res.render('success');
+router.get('/sukces', (req, res, next) => {
+	res.render('success');
+});
+
+router.get('/regulamin', (req, res, next) => {
+	res.render('regulamin');
 });
 
 router.get('/blad', (req, res, next) => {
-    res.render('error');
+	res.render('error');
 });
 
 router.get('*', (req, res, next) => {
-    res.status(404).render('404');
+	res.status(404).render('404');
 });
 
 export default router;

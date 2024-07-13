@@ -3,12 +3,12 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import debug from 'debug';
-import apiRouter from './backend/routes/payment-routes.js';
-import frontendRouter from './frontend/pages-routes.js';
+import apiRouter from './backend/routes/payment-routes.mjs';
+import frontendRouter from './frontend/pages-routes.mjs';
 import http from 'http';
 import dotenv from 'dotenv';
-import config from './config.js';
-import {Utils} from './backend/utils/utils.js';
+import config from './config.mjs';
+import {Utils} from './backend/utils/utils.mjs';
 // Initialize dotenv
 dotenv.config();
 

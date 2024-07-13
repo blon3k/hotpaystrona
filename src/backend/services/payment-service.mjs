@@ -1,7 +1,7 @@
 import axios from 'axios';
 import crypto from 'crypto';
-import { PaymentError } from '../errors/payment-error.js';
-import { sendMail } from '../providers/mailgun.js';
+import { PaymentError } from '../errors/payment-error.mjs';
+import { sendMail } from '../providers/mailgun.mjs';
 
 class PaymentService {
 

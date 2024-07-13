@@ -1,7 +1,7 @@
 import express from 'express';
-import PaymentController from '../controllers/payment-controller.js';
-import {initializePayment} from '../validation/payment-validator.js'
-import {resolveValidation} from '../middlewares/resolveValidation.js';
+import PaymentController from '../controllers/payment-controller.mjs';
+import {initializePayment} from '../validation/payment-validator.mjs'
+import {resolveValidation} from '../middlewares/resolveValidation.mjs';
 const router = express.Router();
 
 router.post('/payment/start', initializePayment, resolveValidation, PaymentController.startPayment);

@@ -1,4 +1,4 @@
-import PaymentService from '../services/payment-service.js';
+import PaymentService from '../services/payment-service.mjs';
 
 class PaymentGatewayController {
 
